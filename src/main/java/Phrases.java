@@ -14,33 +14,34 @@ public class Phrases {
     private String phrase;
 
     private void addPharses(){
-        phrases.add("KOCHAM CIĘ");
+        phrases.add("I LOVE YOU");
         phrases.add("SPIDERMAN");
-        phrases.add("CO MI ZROBISZ JAK MNIE ZŁAPIESZ");
+        phrases.add("CATCH ME IF YOU CAN");
         phrases.add("LOVE ROSIE");
         phrases.add("TERMINATOR");
         phrases.add("COCA COLA");
-        phrases.add("GOŚĆ W DOM BÓG W DOM");
+        phrases.add("ESCAPE FROM LOS ANGELES");
         phrases.add("JAK PIES Z KOTEM");
         phrases.add("MONA LISA");
         phrases.add("MONTE CARLO");
-        phrases.add("PRZEMINEŁO Z WIATREM");
+        phrases.add("GO WITH THE WIND");
         phrases.add("JOHN TRAVOLTA");
         phrases.add("SALMA HAYEK");
         phrases.add("MADONNA");
-        phrases.add("CZTERDZIESTU ROZBÓJNIKÓW");
-        phrases.add("CZTERY WESELA I POGRZEB");
+        phrases.add("FAST AND FURIOUS");
+        phrases.add("FOUR WEDDINGS AND A FUNERAL");
 
 
 
     }
     private String pickOne(){
+
         return phrases.get(random.nextInt(phrases.size()));
     }
 
     public Phrases() {
         addPharses();
-        phrase = pickOne();
+        this.phrase = pickOne();
     }
 
     public String getPharse() {
